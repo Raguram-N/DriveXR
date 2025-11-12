@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DriveXR Prototype</title>
+<style>
+* {
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+background: #0a0a0a;
+color: #fff;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+transition: background 0.5s;
+}
+.container {
+text-align: center;
+background: rgba(255,255,255,0.1);
+padding: 30px;
+border-radius: 15px;
+width: 90%;
+max-width: 500px;
+box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+h1 {
+margin-bottom: 20px;
+font-size: 1.8em;
+}
+.btn {
+display: block;
+background: #00bcd4;
+color: #fff;
+margin: 10px auto;
+padding: 10px 20px;
+border: none;
+border-radius: 8px;
+font-size: 1em;
+cursor: pointer;
+transition: 0.3s;
+}
+.btn:hover {
+background: #0097a7;
+}
+.back-btn {
+background: #444;
+}
+.back-btn:hover {
+background: #333;
+}
+.report-box {
+background: rgba(255,255,255,0.1);
+margin-top: 15px;
+padding: 10px;
+border-radius: 10px;
+text-align: left;
+}
+</style>
+</head>
+<body>
+<div class="container" id="page"></div>
+
+<script>
+const page = document.getElementById('page');
+let userRole = '';
+let drivingMode = '';
+let currentStep = 'login';
+
+function renderLogin() {
+currentStep = 'login';
+page.innerHTML = `
+<h1>🚗 DriveXR Login</h1>
+<p>Select your role to begin:</p>
+<button class='btn' onclick="selectRole('Learner')">Learner</button>
+<button class='btn' onclick="selectRole('Instructor')">Instructor</button>
+`;
+}
+
+function selectRole(role) {
+userRole = role;
+renderDrivingMode();
+}
+
+function renderDrivingMode() {
+currentStep = 'mode';
+page.innerHTML = `
+<h1>🚦 Driving Mode Selection</h1>
+<p>Welcome ${userRole}! Choose your mode:</p>
+<button class='btn' onclick="selectMode('City')">City</button>
+<button class='btn' onclick="selectMode('Highway')">Highway</button>
+<button class='btn' onclick="selectMode('Hill')">Hill</button>
+<button class='btn' onclick="selectMode('Test Course')">Test Course</button>
+<button class='btn back-btn' onclick="goBack()">⬅️ Back</button>
+`;
+}
+
+function selectMode(mode) {
+drivingMode = mode;
+renderImmersion();
+}
+
+function renderImmersion() {
+currentStep = 'immersion';
+page.innerHTML = `
+<h1>🕶️ Immersion Mode</h1>
+<p>You’re about to enter the VR simulation for <b>${drivingMode}</b> driving.</p>
+<button class='btn' onclick="renderScenario()">Start Simulation</button>
+<button class='btn back-btn' onclick="goBack()">⬅️ Back</button>
+`;
+}
+
+function renderScenario() {
+currentStep = 'scenario';
+page.innerHTML = `
+<h1>🌧️ Scenario Challenge</h1>
+<p>Choose a driving condition to test your skill:</p>
+<button class='btn' onclick="startFeedback('Rainy')">Rainy</button>
+<button class='btn' onclick="startFeedback('Foggy')">Foggy</button>
+<button class='btn' onclick="startFeedback('Night')">Night</button>
+<button class='btn' onclick="startFeedback('Traffic Jam')">Traffic Jam</button>
+<button class='btn back-btn' onclick="goBack()">⬅️ Back</button>
+`;
+}
+
+function startFeedback(condition) {
+currentStep = 'feedback';
+page.innerHTML = `
+<h1>🤖 AI Feedback Mode</h1>
+<p>Condition: <b>${condition}</b></p>
+<p>Analyzing performance...</p>
+<div class='report-box'>
+<p>Speed Control: 87%</p>
+<p>Lane Discipline: 92%</p>
+<p>Reaction Time: Good</p>
+</div>
+<button class='btn' onclick="renderReport()">View Report Summary</button>
+<button class='btn back-btn' onclick="goBack()">⬅️ Back</button>
+`;
+}
+
+function renderReport() {
+currentStep = 'report';
+page.innerHTML = `
+<h1>📊 Report Summary</h1>
+<div class='report-box'>
+<p><b>Role:</b> ${userRole}</p>
+<p><b>Mode:</b> ${drivingMode}</p>
+<p><b>Score:</b> 89%</p>
+<p><b>Feedback:</b> Maintain smoother braking and better mirror checks.</p>
+<p><b>Video Replay:</b> Simulation playback available.</p>
+</div>
+<button class='btn' onclick="renderLogin()">Restart</button>
+<button class='btn back-btn' onclick="goBack()">⬅️ Back</button>
+`;
+}
+
+function goBack() {
+switch (currentStep) {
+case 'mode':
+renderLogin();
+break;
+case 'immersion':
+renderDrivingMode();
+break;
+case 'scenario':
+renderImmersion();
+break;
+case 'feedback':
+renderScenario();
+break;
+case 'report':
+startFeedback('Rainy'); // default previous step
+break;
+default:
+renderLogin();
+}
+}
+
+renderLogin();
+</script>
+</body>
+</html>
