@@ -13,7 +13,7 @@ It enables learners to **practice driving in realistic virtual environments**, e
 <tr>
 <td width="50%" align="center" valign="middle">
 
-<img src="problem-statement.png" width="95%" alt="DriveXR Problem Illustration" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
+<img src="story-observation.png" width="95%" alt="DriveXR Problem Illustration" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
 
 </td>
 <td width="60%" valign="top">
@@ -36,7 +36,7 @@ Training cars were limited, instructors were overburdened, and learners often fa
 <tr>
 <td width="50%" align="center" valign="middle">
 
-<img src="solution.png" width="95%" alt="DriveXR Solution Illustration" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
+<img src="innovation.1.png" width="95%" alt="DriveXR Solution Illustration" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
 
 </td>
 <td width="60%" valign="top">
@@ -54,6 +54,7 @@ a virtual driving world where people learn by *experiencing* real roads, not jus
 </td>
 </tr>
 </table>
+
 
 ---
 
@@ -101,8 +102,7 @@ a virtual driving world where people learn by *experiencing* real roads, not jus
 <tr>
 <td width="50%" align="center" valign="middle">
 
-<img src="audience1.png" width="95%" alt="DriveXR Audience 1" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
-<img src="audience2.png" width="95%" alt="DriveXR Audience 2" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
+<img src="Target group.png" width="95%" alt="DriveXR Audience 1" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
 
 </td>
 <td width="60%" valign="top">
@@ -149,8 +149,7 @@ a virtual driving world where people learn by *experiencing* real roads, not jus
 <tr>
 <td width="50%" align="center" valign="middle">
 
-<img src="revenue.png" width="95%" alt="DriveXR Revenue" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
-<img src="revenue2.png" width="95%" alt="DriveXR Revenue 2" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
+<img src="Profit channel.png" width="95%" alt="DriveXR Revenue" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
 
 </td>
 <td width="60%" valign="top">
@@ -212,7 +211,7 @@ a virtual driving world where people learn by *experiencing* real roads, not jus
 <tr>
 <td width="50%" align="center" valign="middle">
 
-<img src="future-tech.png" width="95%" alt="DriveXR Future Scope" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
+<img src="Future scope.1.png" width="95%" alt="DriveXR Future Scope" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
 
 </td>
 <td width="60%" valign="top">
