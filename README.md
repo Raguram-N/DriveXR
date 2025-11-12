@@ -93,7 +93,7 @@ a virtual driving world where people learn by *experiencing* real roads, not jus
 5. **AI Feedback** → Real-time corrections for speed, lane use, and response time.  
 6. **Report Summary** → Analytics and video playback of performance.  
 
-> ## 🎮 Sample prototype demo: [Link](https://raguram-n.github.io/DriveXR-Prototype/)  
+> ## 🎮 Sample prototype demo: [Link](https://raguram-n.github.io/DriveXR/)
 
 ---
 
