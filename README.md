@@ -58,6 +58,15 @@ a virtual driving world where people learn by *experiencing* real roads, not jus
 
 ---
 
+<table>
+<tr>
+<td width="50%" align="center" valign="middle">
+
+<img src="innovation.2.png" width="95%" alt="DriveXR Problem Illustration" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
+
+</td>
+<td width="60%" valign="top">
+
 ## ✨ Key Features  
 
 - 🕹️ **Realistic Driving Simulations** — Practice on highways, city streets, and rural roads with lifelike traffic.  
@@ -67,6 +76,11 @@ a virtual driving world where people learn by *experiencing* real roads, not jus
 - 🏆 **Progress Analytics Dashboard** — Visual reports for learners and instructors.  
 - 🧍‍♂️ **Instructor Control Mode** — Trainers can set routes, challenges, and track real-time performance.  
 - 🚘 **VR Hardware Integration** — Compatible with steering wheels, pedals, and VR headsets for true-to-life immersion.  
+
+</td>
+</tr>
+</table>
+
 
 ---
 
