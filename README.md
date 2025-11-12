@@ -255,9 +255,9 @@ a virtual driving world where people learn by *experiencing* real roads, not jus
 
 ## 📈 Research Proof  
 
-- [Road Safety and VR Simulation Effectiveness](https://github.com/Raguram-N/DriveXR-Research-1/blob/main/README.md)  
-- [How VR Reduces Driving Anxiety](https://github.com/Raguram-N/DriveXR-Research-2/blob/main/README.md)  
-- [Market Opportunity Report](https://github.com/Raguram-N/DriveXR-MarketProof/blob/main/README.md)  
+- [Road Safety and VR Simulation Effectiveness](https://github.com/Raguram-N/Road-Safety-and-VR-Simulation-Effectiveness/blob/main/README.md))  
+- [How VR Reduces Driving Anxiety](https://github.com/Raguram-N/How-VR-Reduces-Driving-Anxiety/blob/main/README.md)  
+- [Market Opportunity Report](https://github.com/Raguram-N/Market-Opportunity-Report/blob/main/README.md)  
 
 ---
 
